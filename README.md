@@ -64,24 +64,24 @@ cd mts25_mlops_hse_3part
 docker compose up -d
 ```
 
-### Создание таблиц в Clickhouse
+### Создаем таблицы в Clickhouse
 ```bash
 cat sql/create_tables.sql | docker exec -i clickhouse clickhouse-client -u click --password click -n
 
-# Проверка, что таблицы создались
+# Проверяем, что таблицы создались
 curl 'http://click:click@localhost:8123/?query=SHOW%20TABLES'
 ```
-### Создание виртуальной среды и установка зависимостей
+### Создаем виртуальную среду и устанавливаем зависимости
 ```bash
 python3 -m venv .venv 
 source .venv/bin/activate 
 pip install -r requirements.txt
 ```
-### Отправка данных в Kafka
+### Отправляем данные в Kafka
 ```bash
 python producer.py
 ```
-### Проверяем дошли ли данные до Clickhouse
+### Проверяем, дошли ли данные до Clickhouse
 ```bash
 curl 'http://click:click@localhost:8123/?query=SELECT+count()+FROM+transactions'
 ```
