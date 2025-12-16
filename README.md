@@ -1,8 +1,5 @@
-## **StreamStonks**: An end-to-end MLOps platform for real-time stock price prediction.  
-Built with microservices architecture using Kafka, PostgreSQL, CatBoost, and Streamlit.  
-Features automated data ingestion, scheduled model retraining, and system health monitoring via Grafana.  
-
-Цены акций выгружаются с помощью [T-Invest API](https://www.tinkoff.ru/invest/).
+# Kafka & Clickhouse with Fraud transactions data
+Датасеты предоставлены в рамках соревнования https://www.kaggle.com/competitions/teta-ml-1-2025
 
 ## ✏️ Структура проекта
 
