@@ -1,5 +1,4 @@
-## <u>StreamStonks</u>: 
-An end-to-end MLOps platform for real-time stock price prediction.  
+## **StreamStonks**: An end-to-end MLOps platform for real-time stock price prediction.  
 Built with microservices architecture using Kafka, PostgreSQL, CatBoost, and Streamlit.  
 Features automated data ingestion, scheduled model retraining, and system health monitoring via Grafana.  
 
